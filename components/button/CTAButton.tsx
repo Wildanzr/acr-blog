@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import Link from "next/link";
 import { Body } from "@/components";
 
 const CTAButton = ({ href, textProp }: CTAButtonProps) => {
@@ -17,18 +17,16 @@ const CTAButton = ({ href, textProp }: CTAButtonProps) => {
     window.scrollTo({
       top: elem?.getBoundingClientRect().top,
       behavior: "smooth",
-    })
-  }
+    });
+  };
   return (
-    <motion.a
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
+    <Link
       href={href}
       onClick={handleScroll}
       className="flex items-center justify-center px-[10px] py-[5px] bg-redprimary"
     >
       <Body {...textProp} />
-    </motion.a>
+    </Link>
   );
 };
 

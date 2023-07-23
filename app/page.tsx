@@ -1,4 +1,4 @@
-import { CTAButton, H1, Navbar, Banner } from "@/components";
+import { Navbar, Banner } from "@/components";
 
 export default function Home() {
   return (

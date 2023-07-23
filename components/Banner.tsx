@@ -14,7 +14,7 @@ const Banner = () => {
           textProp={{ text: "Get Started ", center: true }}
         />
       </div>
-      <div className="absolute inset-0 z-10 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 z-10 bg-black bg-opacity-60" />
       <div className="absolute inset-0 bg-center bg-no-repeat bg-cover bg-hero" />
     </section>
   );
