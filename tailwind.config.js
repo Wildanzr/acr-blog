@@ -8,9 +8,19 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "hero": 'url("/images/hero-bg.jpg")',
+        "cpu": 'url("/images/cpu.jpg")',
+      },
+      colors: {
+        semiblack: "#2B2D42",
+        redprimary: "#EF233C",
+        redsecondary: "#D90429",
+        whiteprimary: "#EDF2F4",
+        whitesecondary: "#8D99AE",
+      },
+      fontFamily: {
+        jakarta: ["var(--font-jakarta)"],
+        open: ["var(--font-open)"],
       },
     },
   },
