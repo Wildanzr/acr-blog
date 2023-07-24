@@ -8,7 +8,3 @@ export { default as Description } from './typography/Description'
 
 // Button
 export { default as CTAButton } from './button/CTAButton'
-
-// Other
-export { default as Navbar } from './Navbar'
-export { default as Banner } from './Banner'

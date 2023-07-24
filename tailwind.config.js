@@ -4,12 +4,14 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './views/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
       backgroundImage: {
-        "hero": 'url("/images/hero-bg.jpg")',
-        "cpu": 'url("/images/cpu.jpg")',
+        hero: 'url("/images/hero-bg.jpg")',
+        cpu: 'url("/images/cpu.jpg")',
+        qr: 'url("/images/qr-transparent.png")',
       },
       colors: {
         semiblack: "#2B2D42",

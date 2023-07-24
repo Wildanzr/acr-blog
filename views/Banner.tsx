@@ -1,4 +1,4 @@
-import { H1, CTAButton } from ".";
+import { H1, CTAButton } from "@/components";
 
 const Banner = () => {
   return (
@@ -14,6 +14,7 @@ const Banner = () => {
           textProp={{ text: "Get Started ", center: true }}
         />
       </div>
+      <div className="absolute inset-0 z-10 opacity-40 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-sky-500 via-slate-500 to-rose-400" />
       <div className="absolute inset-0 z-10 bg-black bg-opacity-60" />
       <div className="absolute inset-0 bg-center bg-no-repeat bg-cover bg-hero" />
     </section>
