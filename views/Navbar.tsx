@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { H1 } from "@/components";
 import { BsList } from "react-icons/bs";
@@ -12,8 +12,17 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const scrollDirection = useScrollDirection();
 
+  // Monitor scroll direction
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [scrollDirection]);
+
   return (
-    <div className={`fixed ${scrollDirection === "down" ? "-top-24" : "top-0"} left-0 z-30 flex flex-col justify-between w-full transition-all duration-500 lg:backdrop-blur-md`}>
+    <div
+      className={`fixed ${
+        scrollDirection === "down" ? "-top-24" : "top-0"
+      } left-0 z-30 flex flex-col justify-between w-full transition-all duration-500 lg:backdrop-blur-md`}
+    >
       <div className="flex flex-row items-center justify-between px-8 py-2 lg:px-14 bg-semiblack lg:bg-transparent">
         <H1
           text="ACRIG"
