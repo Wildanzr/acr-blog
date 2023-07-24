@@ -13,4 +13,13 @@ declare global {
         href: string;
         textProp: TextProps;
     }
+
+    interface ItemAboutProps {
+        icon: React.ReactNode;
+        title: string;
+        description: string;
+    }
+    interface WaveProps {
+        fill?: string;
+    }
 }

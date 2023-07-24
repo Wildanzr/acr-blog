@@ -1,4 +1,4 @@
-import { Navbar, Banner, About } from "@/views";
+import { Navbar, Banner, About, Research } from "@/views";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <About />
+      <Research />
     </main>
   );
 }

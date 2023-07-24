@@ -8,3 +8,7 @@ export { default as Description } from './typography/Description'
 
 // Button
 export { default as CTAButton } from './button/CTAButton'
+
+// Other
+export { default as ItemAbout } from './other/ItemAbout'
+export { default as Wave1 } from './separator/Wave1'
